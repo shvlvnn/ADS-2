@@ -22,14 +22,14 @@ double calcItem(double x, uint16_t n) {
 
 double expn(double x, uint16_t count) {
     double e;
-    for (uint16_t i = 0; i <= count; ++i)
+    for (uint16_t i = 1; i <= count; ++i)
         e += calcItem(x, i);
     return e;
 }
 
 double sinn(double x, uint16_t count) {
     double s;
-    for (uint16_t i = 0; i <= count; ++i) {
+    for (uint16_t i = 1; i <= count; ++i) {
             s += pown(-1, i)*calcItem(2*x-1, i);
     }
     return s;
