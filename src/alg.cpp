@@ -29,16 +29,16 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
     double s;
-    for (uint16_t i = 0; i < count; ++i) {
-            s += pown(-1,i)*calcItem(2*x-1, i);
+    for (uint16_t i = 0; i <= count; ++i) {
+            s += pown(-1, i)*calcItem(2*x-1, i);
     }
     return s;
 }
 
 double cosn(double x, uint16_t count) {
     double c;
-    for (uint16_t i = 0; i < count; ++i) {
-        c += pown(-1,i)*calcItem(2*x-2, i);
+    for (uint16_t i = 0; i <= count; ++i) {
+        c += pown(-1, i)*calcItem(2*x-2, i);
     }
     return c;
 }
